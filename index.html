@@ -468,7 +468,7 @@
                 text: "Alguém cria um grupo para gozar com um colega de turma. O que fazes?",
                 options: [
                     { 
-                        text: "<span class='emoji'>🚪</span> Saio do grupo e explico ao colega porquê", 
+                        text: "<span class='emoji'>🚪</span> < Comunico a um adulto e informo a vítima", 
                         correct: true, 
                         feedback: "<span class='highlight'>Ótima escolha!</span> Sair do grupo e explicar a tua posição mostra integridade e apoio ao colega." 
                     },
@@ -524,6 +524,27 @@
                     }
                 ]
             }
+                        {
+                text: "Recebes um pedido de amizade de alguém que é mal-educado nos teus posts. O que fazes?",
+                options: [
+                    { 
+                        text: "<span class='emoji'>❌</span> Recuso o pedido e bloqueio a pessoa", 
+                        correct: true, 
+                        feedback: "<span class='highlight'>Boa decisão!</span> Definir limites claros é importante para manter um ambiente online saudável." 
+                    },
+                    { 
+                        text: "<span class='emoji'>⚠️</span> Aceito mas coloco em lista restrita", 
+                        correct: false, 
+                        feedback: "Mesmo com restrições, aceitar pessoas tóxicas na tua rede pode encorajar comportamentos negativos." 
+                    },
+                    { 
+                        text: "<span class='emoji'>🤝</span> Aceito para tentar mudar a sua atitude", 
+                        correct: false, 
+                        feedback: "Embora bem intencionado, raramente funciona. Protege-te primeiro antes de tentares ajudar os outros." 
+                    }
+                ]
+            }
+        
         ];
 
         // Estado do jogo
@@ -613,7 +634,7 @@
                 } else {
                     endGame();
                 }
-            }, 10000);
+            }, 6000);
         }
         
         // Atualizar estatísticas
