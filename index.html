@@ -424,6 +424,45 @@
     <script>
         // Dados do jogo
         const scenarios = [
+            text: "O que é CyberBullyng?",
+                options: [
+                    { 
+                        text: "<span class='emoji'>🔥</span> Um tipo de brincadeira saudável feita entre amigos nas redes sociais", 
+                        correct: false, 
+                        feedback: "Errado, deves aprender mais sobre o assunto." 
+                    },
+                    { 
+                        text: "<span class='emoji'>📱</span> Uma forma de agressão feita por meios deigitais, como redes sociais, mensagens ou emails", 
+                        correct: true, 
+                        feedback: "<span class='highlight'>Excelente!</span> Estás apto para responder a este questionário!" 
+                    },
+                    { 
+                        text: "<span class='emoji'>👥</span> Um problema que só acontece com adultos em ambiente de trabalho.", 
+                        correct: false, 
+                        feedback: "Errado, deves aprender mais sobre o assunto." 
+                    }
+                ]
+            },
+            {
+                text: "Qual a consequência comum do cyberbullyng em adolescentes?",
+                options: [
+                    { 
+                        text: "<span class='emoji'>🙈</span> Melhoria da autoestima", 
+                        correct: false, 
+                        feedback: "Obviamente que não, estás a ferir os sentimentos da pessoa." 
+                    },
+                    { 
+                        text: "<span class='emoji'>👥</span>Aumento da interação sociak", 
+                        correct: false, 
+                        feedback: "<span class='highlight'>Excelente!</span> Errado! A pessoa vai ficar constrangida e vai fechar se socialmente." 
+                    },
+                    { 
+                        text: "<span class='emoji'>😰</span> Ansiedade, depressão e isolamento social", 
+                        correct: true, 
+                        feedback: "Correto, infelizmente o Cyberbullyng pode criar vários danos psicológicos." 
+                    }
+                ]
+            },
             {
                 text: "Recebes uma mensagem anónima com comentários desagradáveis sobre o teu aspeto físico. O que fazes?",
                 options: [
@@ -453,7 +492,7 @@
                         feedback: "<span class='highlight'>Correto!</span> Documentar e reportar é a melhor forma de lidar com difamação online. Os administradores podem remover o conteúdo ofensivo." 
                     },
                     { 
-                        text: "<span class='emoji'>😡</span> Envio mensagens privadas ameaçando quem partilha os rumores", 
+                        text: "<span class='emoji'>😡</span> Envio mensagens privadas a ameaçar quem está a partilhar os rumores", 
                         correct: false, 
                         feedback: "Ameaças só pioram a situação e podem ter consequências para ti. Mantém a calma e age de forma assertiva." 
                     },
@@ -465,7 +504,7 @@
                 ]
             },
             {
-                text: "Descobres que alguém criou um perfil falso usando a tua foto. O que fazes?",
+                text: "Descobres que alguém criou um perfil falso com a tua foto. O que fazes?",
                 options: [
                     { 
                         text: "<span class='emoji'>🔒</span> Denuncio o perfil falso à plataforma e alerto os meus amigos", 
@@ -651,7 +690,7 @@
             
             // Atualizar pontuação se correto
             if (selectedOption.correct) {
-                score += 20;
+                score += 10;
                 updateStats();
             }
             
